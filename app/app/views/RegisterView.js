@@ -69,79 +69,79 @@ export default class RegisterView extends Component {
     const navigation = this.props.navigation.state.params.navigation;
     
     return (
-      <View style={styles.container}>
+      <View >
         <BackHeader navigation={navigation} target={"Settings"}/>
-          <ScrollView>
-            <View style={styles.container}>
+          <View style={styles.container}>
+            <ScrollView>
 
-            <Text style={styles.label}>Nome</Text>
-            <TextInput
-              autoCapitalize="words"
-              autoCorrect={false}
-              returnKeyType="next"
-              keyboardType="default"
-              placeholderTextColor="#999"
-              style={styles.input}
-              onChangeText={(name) => this.setState({name})}
-            />
+              <Text style={styles.label}>Nome</Text>
+              <TextInput
+                autoCapitalize="words"
+                autoCorrect={false}
+                returnKeyType="next"
+                keyboardType="default"
+                placeholderTextColor="#999"
+                style={styles.input}
+                onChangeText={(name) => this.setState({name})}
+              />
 
-            <Text style={styles.label}>E-mail</Text>
-            <TextInput
-              autoCapitalize="none"
-              autoCorrect={false}
-              returnKeyType="next"
-              keyboardType="email-address"
-              placeholderTextColor="#999"
-              style={styles.input}
-              onChangeText={(email) => this.setState({email})}
-            />
+              <Text style={styles.label}>E-mail</Text>
+              <TextInput
+                autoCapitalize="none"
+                autoCorrect={false}
+                returnKeyType="next"
+                keyboardType="email-address"
+                placeholderTextColor="#999"
+                style={styles.input}
+                onChangeText={(email) => this.setState({email})}
+              />
 
-            <Text style={styles.label}>Telefone</Text>
-            <TextInput
-              autoCapitalize="none"
-              autoCorrect={false}
-              returnKeyType="next"
-              keyboardType="number-pad"
-              placeholderTextColor="#999"
-              style={styles.input}
-              onChangeText={(phone) => this.setState({phone})}
-            />
+              <Text style={styles.label}>Telefone</Text>
+              <TextInput
+                autoCapitalize="none"
+                autoCorrect={false}
+                returnKeyType="next"
+                keyboardType="number-pad"
+                placeholderTextColor="#999"
+                style={styles.input}
+                onChangeText={(phone) => this.setState({phone})}
+              />
 
-            <Text style={styles.label}>Senha</Text>
-            <TextInput
-              autoCapitalize="none"
-              autoCorrect={false}
-              returnKeyType="next"
-              keyboardType="default"
-              placeholderTextColor="#999"
-              style={styles.input}
-              onChangeText={(password) => this.setState({password})}
-            />
+              <Text style={styles.label}>Senha</Text>
+              <TextInput
+                autoCapitalize="none"
+                autoCorrect={false}
+                returnKeyType="next"
+                keyboardType="default"
+                placeholderTextColor="#999"
+                style={styles.input}
+                onChangeText={(password) => this.setState({password})}
+              />
 
-            <Text style={styles.label}>Endereço</Text>
-            <TextInput
-              autoCapitalize="none"
-              autoCorrect={false}
-              returnKeyType="send"
-              keyboardType="default"
-              placeholderTextColor="#999"
-              style={styles.input}
-              onChangeText={(address) => this.setState({address})}
-            />
+              <Text style={styles.label}>Endereço</Text>
+              <TextInput
+                autoCapitalize="none"
+                autoCorrect={false}
+                returnKeyType="send"
+                keyboardType="default"
+                placeholderTextColor="#999"
+                style={styles.input}
+                onChangeText={(address) => this.setState({address})}
+              />
 
-            <TouchableOpacity
-              onPress={() => this.onRegisterPress()}
-              style={{alignSelf: 'stretch'}}>
-              <LinearGradient
-                style={styles.button}
-                start={{x: 0, y: 0}}
-                end={{x: 1, y: 1}}
-                colors={['#EF5350', '#F59896']}>
-                <Text style={styles.buttonText}>Cadastrar</Text>
-              </LinearGradient>
+              <TouchableOpacity
+                onPress={() => this.onRegisterPress()}
+                style={{alignSelf: 'stretch'}}>
+                <LinearGradient
+                  style={styles.button}
+                  start={{x: 0, y: 0}}
+                  end={{x: 1, y: 1}}
+                  colors={['#EF5350', '#F59896']}>
+                  <Text style={styles.buttonText}>Cadastrar</Text>
+                </LinearGradient>
             </TouchableOpacity>
-          </View>
-        </ScrollView>
+          </ScrollView>
+        </View>
       </View>
     );
   }
